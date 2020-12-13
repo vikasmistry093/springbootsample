@@ -9,7 +9,7 @@ public class AppController {
 	@RequestMapping(value="/")
 	public String indexPage() {
 		System.out.println("Hello World");
-		return "index";
+		return "test";
 	}
 	
 	@RequestMapping(value="/index")
@@ -17,5 +17,11 @@ public class AppController {
 		System.out.println("Hello World");
 		return "index";
 	}
-
+	
+	@RequestMapping(value="/productInfo")
+	public String productInfo() {
+		System.out.println("Product Info Page");
+		return "productInfo";
+	}
+	
 }
