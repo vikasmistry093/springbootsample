@@ -1,20 +1,20 @@
-package com.republish.service;
+package com.republish.dao;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
-import com.republish.dao.RepublishDAO;
 import com.republish.model.Order;
 import com.republish.model.Product;
 import com.republish.model.User;
 
-@Service
-public class RepublishServiceImpl implements RepublishService {
+@Repository
+public class RepublishDAOImpl implements RepublishDAO {
 	
 	@Autowired
-	RepublishDAO dao;
+	JdbcTemplate jdbcTemplate;
 
 	@Override
 	public List<Product> getAllProductsBySearchCriteria(int pageNumber) {
