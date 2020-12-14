@@ -136,3 +136,56 @@ li a:hover:not (.active ) {
 .buy-button:hover {
   background-color: #e6a30c;
 }
+
+
+/* login */
+
+table{
+
+  border-collapse: collapse;
+  width: 100px; 
+  background-color:lightblue; 
+  margin-left:550px;
+  margin-bottom:200px;
+  margin-top:200px;
+  
+  
+
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 30px;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;
+padding-left:300px;}
+input[type=text], input[type=password] {
+  width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.container {
+  padding: 70px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
